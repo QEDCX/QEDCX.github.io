@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>行忆</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        /*———————————————————————————————————————————————— logo ———————————————————————————————————————————————————————————————*/
+
+        .logo{
+            width: 50px;
+            height: 60px;
+        }
+
+        /*——————————————————————————————————————————————背景视频——————————————————————————————————————————————————————————*/
+        .back-video{
+            position: absolute;
+            /*top: 0px;*/
+            z-index: -1;
+            /*border: red solid 1px;*/
+            width: 100%;
+            height: 100%;
+        }
+        .back-video video{
+            /*border: yellow solid 2px;*/
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        /*————————————————————————————————————————————  logo ———————————————————————————————————————————————————— ————*/
+        /*导航栏内的三个块*/
+        header > div{
+            display: inline-block;
+        }
+        /* ——————————————————————————————————————————————  导航列表  —————————————————————————————————————————————— ————*/
+
+        header{
+            /*border: solid darkgreen 2px;*/
+            height: 60px;
+            backdrop-filter: blur(2px);
+            background-color: #1a2a3a;
+            animation: col;
+        }
+
+        header ul li{
+            padding: 0px;
+            /*border: 1px solid  yellowgreen;*/
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: transparent;
+            display: inline-block;
+            /*position: relative;*/
+            /*right: 20%;*/
+        }
+
+        header .nav-list a{
+            color: white;
+            padding: 0px;
+            text-decoration: none;
+        }
+
+        header .nav-list{
+            position: absolute;
+            /*right: 130px;*/
+            right: 7%;
+            top: 15px;
+        }
+
+        header .nav-list a{
+            font-family: 宋体;
+            font-size: large;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        header .nav-list div{
+            animation: underline 3s infinite alternate-reverse;
+            background-color: purple;
+            padding: 0;
+            margin-top: 5px;
+            height: 2px;
+        }
+        @keyframes underline {
+            from{
+                width: 0%;
+            }
+
+            50%{
+                background-color: orange;
+            }
+
+            to{
+                width: 100%;
+            }
+
+
+
+        }
+
+        /*   —————————————————  login—————————————————————————————*/
+
+        #login{
+
+            padding: 3px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 背景视频 -->
+    <div class="back-video">
+        <video src="../resource/xc.mp4" autoplay  loop></video>
+    </div>
+
+    <!-- 导航栏-->
+    <header>
+        <div class="logo">
+
+        </div>
+        <div class="nav-list">
+            <ul>
+                <!--                -->
+                <li>
+                    <a href="">景 区</a>
+                    <div/>
+                </li>
+                <!--                -->
+                <li>
+                    <a href="footprint.html">足 迹</a>
+                    <div/>
+                </li>
+
+                <li>
+                    <a href="footprint.html">热度榜</a>
+                    <div/>
+                </li>
+                <!--                -->
+                <li style="border-left: solid orangered 2px;padding-left: 10px;">
+                    <input type="button" id="login" value="登 录">
+                </li>
+            </ul>
+        </div>
+    </header>
+
+</body>
+
+
+
+</html>

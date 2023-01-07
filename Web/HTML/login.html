@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>登录</title>
+	<style>
+		body,html{height: 100%}
+        body {
+            background: url("../resource/lo-bj.jpg");
+            background-size: cover;
+        }
+
+        #login_box {
+            width: 20%;
+            height: 51%;
+            background-color: #00000060;
+            margin: auto;
+            margin-top: 5%;
+            text-align: center;
+            border-radius: 10px;
+            padding: 50px 50px;
+        }
+
+        h2 {
+            color: #ffffff90;
+            margin-top: 5%;
+        }
+
+
+        span {
+            color: #fff;
+        }
+
+        input {
+            border: 0;
+            width: 60%;
+            font-size: 15px;
+            color: #fff;
+            background: transparent;
+            border-bottom: 2px solid #fff;
+            padding: 5px 10px;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 50px;
+            width: 60%;
+            height: 30px;
+            border-radius: 10px;
+            border: 0;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            font-size: 15px;
+            background-image: linear-gradient(to right, #30cfd0, #330867);
+        }
+
+
+        a {
+            color: #b94648;
+        }
+	</style>
+	<script src="../JS/login.js" defer></script>
+</head>
+
+<body>
+		<div id="login_box">
+				<h2>LOGIN</h2>
+				<div id="input_box">
+					<input id="name" type="text" placeholder="请输入用户名">
+				</div>
+				<div class="input_box">
+					<input id="pwd" type="password" placeholder="请输入密码">
+				</div>
+				<label id="alert" hidden="hidden" style="color: red;margin-top: 10px;display: block"></label>
+				<button id="btn_login">登录</button><br>
+		</div>
+</body>
+</html>
+
